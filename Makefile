@@ -6,13 +6,20 @@
 #    By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/31 19:11:27 by mruiz-sa          #+#    #+#              #
-#    Updated: 2022/06/29 19:26:59 by mruiz-sa         ###   ########.fr        #
+#    Updated: 2022/06/30 18:25:58 by mruiz-sa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = push_swap
 
 SRC = ./srcs/ft_strlen.c \
+			./srcs/ft_atoi.c \
+			./srcs/ft_split.c \
+			./srcs/ft_substr.c \
+			./srcs/check_and_convert_args_utils.c \
+			./srcs/check_no_characters.c \
+			./srcs/free_and_exit_utils.c \
+			./srcs/other_utils.c \
 			./main.c
 
 OBJECTS = $(SRC:.c=.o)
