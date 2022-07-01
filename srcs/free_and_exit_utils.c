@@ -6,7 +6,7 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/30 16:37:06 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/06/30 17:12:01 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/01 17:18:14 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,15 @@ void	free_and_exit(int *stack_a_nbrs, int *stack_b_nbrs)
 {
 	free(stack_a_nbrs);
 	free(stack_b_nbrs);
+	exit(0);
+}
+
+void	free_stacks(int *stack_a_nbrs, int *stack_b_nbrs,
+	int *stack_a, int *stack_b)
+{
+	free(stack_a_nbrs);
+	free(stack_b_nbrs);
+	free(stack_a);
+	free(stack_b);
 	exit(0);
 }

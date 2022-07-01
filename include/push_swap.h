@@ -6,7 +6,7 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 18:28:17 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/06/30 18:38:20 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/01 17:27:43 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,8 @@ void	free_and_exit(int *stack_a_nbrs, int *stack_b_nbrs);
 int		stack_size(int ac, char **av);
 void	set_stack_nbrs(int	*stack_a_nbrs, int *stack_b_nbrs, int ac);
 void	check_args(int ac, char **av, int *stack_a_nbrs, int *stack_b_nbrs);
-
+void	free_stacks(int *stack_a_nbrs, int *stack_b_nbrs, int *stack_a,
+			int *stack_b);
+int		already_sorted(int *stack_a, int *stack_a_nbrs);
+void	sort_two_numbers(int *stack_a, int *stack_a_nbrs);
 #endif
