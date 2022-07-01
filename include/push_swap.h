@@ -6,7 +6,7 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 18:28:17 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/07/01 17:27:43 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/01 18:29:34 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,6 @@ void	check_args(int ac, char **av, int *stack_a_nbrs, int *stack_b_nbrs);
 void	free_stacks(int *stack_a_nbrs, int *stack_b_nbrs, int *stack_a,
 			int *stack_b);
 int		already_sorted(int *stack_a, int *stack_a_nbrs);
-void	sort_two_numbers(int *stack_a, int *stack_a_nbrs);
+void	sa(int *stack_a, int *stack_a_nbrs);
+void	sb(int *stack_b, int *stack_b_nbrs);
 #endif
