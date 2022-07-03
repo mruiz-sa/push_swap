@@ -6,7 +6,7 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/30 16:10:42 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/06/30 16:44:05 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/03 19:01:13 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,7 @@ void	check_args(int ac, char **av, int *stack_a_nbrs, int *stack_b_nbrs)
 
 void	set_stack_nbrs(int	*stack_a_nbrs, int *stack_b_nbrs, int ac)
 {
-	stack_a_nbrs[0] = ac - 1;
-	stack_a_nbrs[1] = stack_a_nbrs[0];
+	*stack_a_nbrs = ac - 1;
 	*stack_b_nbrs = 0;
 }
 

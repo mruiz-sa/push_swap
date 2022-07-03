@@ -6,7 +6,7 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/01 16:49:23 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/07/01 17:27:22 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/03 19:04:23 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	already_sorted(int *stack_a, int *stack_a_nbrs)
 	i = 1;
 	j = 0;
 	highest = stack_a[0];
-	while (i < stack_a_nbrs[0])
+	while (i < *stack_a_nbrs)
 	{
 		if (stack_a[i] > highest)
 		{
@@ -30,7 +30,7 @@ int	already_sorted(int *stack_a, int *stack_a_nbrs)
 		}
 		i++;
 	}
-	if (j == stack_a_nbrs[1] - 1)
+	if (j == *stack_a_nbrs - 1)
 		return (1);
 	return (0);
 }

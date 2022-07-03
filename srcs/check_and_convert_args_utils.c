@@ -6,7 +6,7 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/30 16:43:39 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/06/30 18:35:55 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/03 19:03:46 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,7 @@ int	convert_unique_arg(int *stack_a, int *stack_a_nbrs, char **av, char **nbrs)
 		size++;
 		i++;
 	}
-	stack_a_nbrs[0] = size;
-	stack_a_nbrs[1] = size;
+	*stack_a_nbrs = size;
 	i = 0;
 	while (i < size)
 	{
@@ -43,7 +42,7 @@ int	convert_all_args(int *stack_a, int *stack_a_nbrs, char **av)
 	int	i;
 
 	i = 0;
-	while (i < stack_a_nbrs[0])
+	while (i < *stack_a_nbrs)
 	{
 		if (check_no_characters(av[i + 1]) == 1)
 			stack_a[i] = ft_atoi(av[i + 1]);
@@ -62,7 +61,7 @@ int	check_input(int *stack_a, int *stack_a_nbrs, char **av)
 	char	**nbrs;
 
 	nbrs = 0;
-	if (stack_a_nbrs[0] == 1)
+	if (*stack_a_nbrs == 1)
 	{
 		if (convert_unique_arg(stack_a, stack_a_nbrs, av, nbrs) == -1)
 			return (-1);
