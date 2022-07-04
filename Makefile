@@ -21,8 +21,12 @@ SRC = ./srcs/ft_strlen.c \
 			./srcs/free_and_exit_utils.c \
 			./srcs/other_utils.c \
 			./srcs/already_sorted.c \
+			./srcs/sort_3_nbrs.c \
+			./srcs/sort_5_nbrs.c \
 			./movements/swap.c \
 			./movements/push.c \
+			./movements/rotate.c \
+			./movements/reverse.c \
 			./main.c
 
 OBJECTS = $(SRC:.c=.o)

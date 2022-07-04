@@ -36,4 +36,11 @@ void	sb(int *stack_b, int *stack_b_nbrs);
 void	ss(int *stack_a, int *stack_b, int *stack_a_nbrs, int *stack_b_nbrs);
 void	pa(int *stack_a, int *stack_b, int *stack_a_nbrs, int *stack_b_nbrs);
 void	pb(int *stack_a, int *stack_b, int *stack_a_nbrs, int *stack_b_nbrs);
+void	ra(int *stack_a, int *stack_a_nbrs);
+void	rb(int *stack_b, int *stack_b_nbrs);
+void	rr(int *stack_a, int *stack_a_nbrs, int *stack_b, int *stack_b_nbrs);
+void	rra(int *stack_a, int *stack_a_nbrs);
+void	rrb(int *stack_b, int *stack_b_nbrs);
+void	rrr(int *stack_a, int *stack_a_nbrs, int *stack_b, int *stack_b_nbrs);
+void	sort_3_nbrs(int *stack_a, int *stack_a_nbrs);
 #endif
