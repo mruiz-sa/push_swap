@@ -1,4 +1,26 @@
-void	second_step(int *stack_a, int *stack_a_nbrs, int *stack_b, int *stack_b_nbrs)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sort_5_nbrs.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/07/05 17:13:33 by mruiz-sa          #+#    #+#             */
+/*   Updated: 2022/07/05 17:32:54 by mruiz-sa         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "../include/push_swap.h"
+
+void	push_and_rotate(int *stack_a, int *stack_a_nbrs, int *stack_b,
+	int *stack_b_nbrs)
+{
+	pa(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);
+	ra(stack_a, stack_a_nbrs);
+}
+
+void	second_step(int *stack_a, int *stack_a_nbrs, int *stack_b,
+	int *stack_b_nbrs)
 {
 	if (stack_b[0] < stack_a[0])
 		pa(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);
@@ -22,13 +44,11 @@ void	second_step(int *stack_a, int *stack_a_nbrs, int *stack_b, int *stack_b_nbr
 		ra(stack_a, stack_a_nbrs);
 	}
 	if (stack_b[0] > stack_a[3])
-	{
-		pa(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);
-		ra(stack_a, stack_a_nbrs);
-	}
+		push_and_rotate(stack_a, stack_a_nbrs, stack_b, stack_b_nbrs);
 }
 
-void	first_step(int *stack_a, int *stack_a_nbrs, int *stack_b, int *stack_b_nbrs)
+void	first_step(int *stack_a, int *stack_a_nbrs, int *stack_b,
+	int *stack_b_nbrs)
 {
 	if (stack_b[0] < stack_a[0])
 		pa(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);
@@ -52,7 +72,8 @@ void	first_step(int *stack_a, int *stack_a_nbrs, int *stack_b, int *stack_b_nbrs
 	}
 }
 
-void	sort_5_nbrs(int *stack_a, int *stack_a_nbrs, int *stack_b, int *stack_b_nbrs)
+void	sort_5_nbrs(int *stack_a, int *stack_a_nbrs, int *stack_b,
+	int *stack_b_nbrs)
 {
 	pb(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);
 	pb(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);

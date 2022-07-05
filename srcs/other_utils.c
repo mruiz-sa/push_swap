@@ -6,7 +6,7 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/30 16:10:42 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/07/03 19:01:13 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/05 17:46:59 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ void	check_args(int ac, char **av, int *stack_a_nbrs, int *stack_b_nbrs)
 		j = 0;
 		while (av[i][j])
 		{
-			if ((av[i][j] < 48 || av[i][j] > 57) && av[i][j] != 32
-				&& av[i][j] != 45)
+			if ((av[i][j] < '0' || av[i][j] > '9') && av[i][j] != ' '
+				&& av[i][j] != '-')
 				error_and_exit(stack_a_nbrs, stack_b_nbrs);
 			if ((av[i][j] == 32) && (av[i][j + 1] == 32))
 				error_and_exit(stack_a_nbrs, stack_b_nbrs);

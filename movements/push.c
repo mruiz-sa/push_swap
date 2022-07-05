@@ -6,7 +6,7 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/03 16:20:33 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/07/03 19:35:04 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/05 19:23:15 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ void	pb(int *stack_a, int *stack_b, int *stack_a_nbrs, int *stack_b_nbrs)
 	}
 	stack_b[0] = stack_a[0];
 	i = 0;
-	while (i < *stack_a_nbrs)
+	while (i < *stack_a_nbrs - 1)
 	{
 		stack_a[i] = stack_a[i + 1];
 		i++;

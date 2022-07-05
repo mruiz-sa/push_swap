@@ -1,3 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   rotate.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/07/05 17:15:46 by mruiz-sa          #+#    #+#             */
+/*   Updated: 2022/07/05 17:32:04 by mruiz-sa         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "../include/push_swap.h"
+
 void	ra(int *stack_a, int *stack_a_nbrs)
 {
 	int	i;
@@ -11,7 +25,7 @@ void	ra(int *stack_a, int *stack_a_nbrs)
 		stack_a[i] = stack_a[i + 1];
 		i++;
 	}
-	stack_a[i] = tmp;
+	stack_a[i] = *tmp;
 	free(tmp);
 	write(1, "ra\n", 3);
 }
@@ -29,7 +43,7 @@ void	rb(int *stack_b, int *stack_b_nbrs)
 		stack_b[i] = stack_b[i + 1];
 		i++;
 	}
-	stack_b[i] = tmp;
+	stack_b[i] = *tmp;
 	free(tmp);
 	write(1, "rb\n", 3);
 }
@@ -47,7 +61,7 @@ void	rr(int *stack_a, int *stack_a_nbrs, int *stack_b, int *stack_b_nbrs)
 		stack_a[i] = stack_a[i + 1];
 		i++;
 	}
-	stack_a[i] = tmp;
+	stack_a[i] = *tmp;
 	i = 0;
 	*tmp = stack_b[0];
 	i = 0;
@@ -56,7 +70,7 @@ void	rr(int *stack_a, int *stack_a_nbrs, int *stack_b, int *stack_b_nbrs)
 		stack_b[i] = stack_b[i + 1];
 		i++;
 	}
-	stack_b[i] = tmp;
+	stack_b[i] = *tmp;
 	free(tmp);
 	write(1, "rr\n", 3);
 }
