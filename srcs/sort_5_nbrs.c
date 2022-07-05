@@ -6,9 +6,11 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 17:13:33 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/07/05 17:32:54 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/05 21:30:22 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include<stdio.h>
 
 #include "../include/push_swap.h"
 
@@ -24,26 +26,26 @@ void	second_step(int *stack_a, int *stack_a_nbrs, int *stack_b,
 {
 	if (stack_b[0] < stack_a[0])
 		pa(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);
-	if ((stack_b[0] > stack_a[0]) && (stack_b[0] < stack_a[1]))
+	else if ((stack_b[0] > stack_a[0]) && (stack_b[0] < stack_a[1]))
 	{
 		pa(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);
 		sa(stack_a, stack_a_nbrs);
 	}
-	if ((stack_b[0] > stack_a[1]) && (stack_b[0] < stack_a[2]))
+	else if ((stack_b[0] > stack_a[1]) && (stack_b[0] < stack_a[2]))
 	{
 		ra(stack_a, stack_a_nbrs);
 		pa(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);
 		sa(stack_a, stack_a_nbrs);
 		rra(stack_a, stack_a_nbrs);
 	}
-	if ((stack_b[0] > stack_a[2]) && (stack_b[0] < stack_a[3]))
+	else if ((stack_b[0] > stack_a[2]) && (stack_b[0] < stack_a[3]))
 	{
 		rra(stack_a, stack_a_nbrs);
 		pa(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);
 		ra(stack_a, stack_a_nbrs);
 		ra(stack_a, stack_a_nbrs);
 	}
-	if (stack_b[0] > stack_a[3])
+	else if (stack_b[0] > stack_a[3])
 		push_and_rotate(stack_a, stack_a_nbrs, stack_b, stack_b_nbrs);
 }
 
@@ -52,20 +54,20 @@ void	first_step(int *stack_a, int *stack_a_nbrs, int *stack_b,
 {
 	if (stack_b[0] < stack_a[0])
 		pa(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);
-	if ((stack_b[0] > stack_a[0]) && (stack_b[0] < stack_a[1]))
+	else if ((stack_b[0] > stack_a[0]) && (stack_b[0] < stack_a[1]))
 	{
 		ra(stack_a, stack_a_nbrs);
 		pa(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);
 		rra(stack_a, stack_a_nbrs);
 	}
-	if ((stack_b[0] > stack_a[1]) && (stack_b[0] < stack_a[2]))
+	else if ((stack_b[0] > stack_a[1]) && (stack_b[0] < stack_a[2]))
 	{
 		rra(stack_a, stack_a_nbrs);
 		pa(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);
 		ra(stack_a, stack_a_nbrs);
 		ra(stack_a, stack_a_nbrs);
 	}
-	if (stack_b[0] > stack_a[2])
+	else if (stack_b[0] > stack_a[2])
 	{
 		pa(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);
 		ra(stack_a, stack_a_nbrs);
@@ -81,8 +83,8 @@ void	sort_5_nbrs(int *stack_a, int *stack_a_nbrs, int *stack_b,
 	while (*stack_b_nbrs != 0)
 	{
 		if (*stack_a_nbrs == 3)
-			first_step(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);
+			first_step(stack_a, stack_a_nbrs, stack_b, stack_b_nbrs);
 		else if (*stack_a_nbrs == 4)
-			second_step(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);
+			second_step(stack_a, stack_a_nbrs, stack_b, stack_b_nbrs);
 	}
 }

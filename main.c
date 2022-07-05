@@ -6,7 +6,7 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 17:54:04 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/07/05 19:50:05 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/05 21:31:09 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,15 +37,10 @@ int	main(int ac, char **av)
 		sa(stack_a, stack_a_nbrs);
 	else if (*stack_a_nbrs == 3)
 		sort_3_nbrs(stack_a, stack_a_nbrs);
-	/* else if (*stack_a_nbrs == 5)
-		sort_5_nbrs(stack_a, stack_a_nbrs, stack_b, stack_b_nbrs);
 	else if (*stack_a_nbrs == 5)
-	{
-		pb(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);
-		pb(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);
-	} */
-	printf("Stack_a: %d, %d, %d\n", stack_a[0], stack_a[1], stack_a[2]);
-	printf("Stack_b: %d, %d\n", stack_a[0], stack_a[1]);
+		sort_5_nbrs(stack_a, stack_a_nbrs, stack_b, stack_b_nbrs);
+	printf("Stack_a: %d, %d, %d, %d, %d\n", stack_a[0], stack_a[1], stack_a[2], stack_a[3], stack_a[4]);
+	printf("Stack_b: %d, %d\n", stack_b[0], stack_b[1]);
 	printf("Stack_a_nbrs: %d\n", *stack_a_nbrs);
 	printf("Stack_b_nbrs: %d\n", *stack_b_nbrs);
 	free_stacks(stack_a_nbrs, stack_b_nbrs, stack_a, stack_b);
