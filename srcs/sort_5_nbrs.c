@@ -6,7 +6,7 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 17:13:33 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/07/05 21:30:22 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/06 18:12:46 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,9 +56,8 @@ void	first_step(int *stack_a, int *stack_a_nbrs, int *stack_b,
 		pa(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);
 	else if ((stack_b[0] > stack_a[0]) && (stack_b[0] < stack_a[1]))
 	{
-		ra(stack_a, stack_a_nbrs);
 		pa(stack_a, stack_b, stack_a_nbrs, stack_b_nbrs);
-		rra(stack_a, stack_a_nbrs);
+		sa(stack_a, stack_a_nbrs);
 	}
 	else if ((stack_b[0] > stack_a[1]) && (stack_b[0] < stack_a[2]))
 	{
