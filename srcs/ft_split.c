@@ -6,10 +6,11 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 11:18:18 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/06/30 18:24:11 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/07 18:54:46 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include<stdlib.h>
 #include "../include/push_swap.h"
 
 static int	ft_number_of_words(const char *s, char c)

@@ -6,10 +6,11 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/15 11:06:47 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/06/30 18:25:04 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/07 18:55:31 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include<stdlib.h>
 #include "../include/push_swap.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)

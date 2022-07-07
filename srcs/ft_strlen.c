@@ -6,11 +6,11 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/11 17:28:54 by marvin            #+#    #+#             */
-/*   Updated: 2022/06/29 19:23:57 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/07 18:55:17 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/push_swap.h"
+#include<unistd.h>
 
 size_t	ft_strlen(const char *str)
 {

@@ -6,11 +6,9 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 17:13:33 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/07/06 18:12:46 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/07 20:36:03 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include<stdio.h>
 
 #include "../include/push_swap.h"
 

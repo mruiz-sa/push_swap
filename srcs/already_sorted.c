@@ -6,11 +6,9 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/01 16:49:23 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/07/03 19:04:23 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/07 20:36:03 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "../include/push_swap.h"
 
 int	already_sorted(int *stack_a, int *stack_a_nbrs)
 {

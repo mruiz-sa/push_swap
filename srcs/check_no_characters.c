@@ -6,11 +6,9 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/30 17:40:55 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/06/30 18:06:30 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/07 18:51:03 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "../include/push_swap.h"
 
 int	check_no_characters(char *str)
 {

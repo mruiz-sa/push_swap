@@ -6,11 +6,12 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/30 16:37:06 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/07/05 19:02:45 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/07 20:36:03 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/push_swap.h"
+#include<stdlib.h>
+#include<unistd.h>
 
 void	free_array(char **str)
 {

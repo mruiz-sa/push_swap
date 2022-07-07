@@ -6,7 +6,7 @@
 #    By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/31 19:11:27 by mruiz-sa          #+#    #+#              #
-#    Updated: 2022/07/05 19:39:14 by mruiz-sa         ###   ########.fr        #
+#    Updated: 2022/07/07 21:04:46 by mruiz-sa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,9 +22,9 @@ SRC = ./srcs/ft_strlen.c \
 			./srcs/other_utils.c \
 			./srcs/already_sorted.c \
 			./srcs/repeated_nbrs.c \
-			./srcs/max_min_values.c \
 			./srcs/sort_3_nbrs.c \
 			./srcs/sort_5_nbrs.c \
+			./srcs/start_algorithm.c \
 			./movements/swap.c \
 			./movements/push.c \
 			./movements/rotate.c \
@@ -33,7 +33,7 @@ SRC = ./srcs/ft_strlen.c \
 
 OBJECTS = $(SRC:.c=.o)
 
-FLAGS = gcc -Wall -Werror -Wextra
+FLAGS = gcc -Wall -Werror -Wextra -g3
 
 $(NAME): $(OBJECTS)
 		@clear
