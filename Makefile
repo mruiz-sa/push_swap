@@ -6,7 +6,7 @@
 #    By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/31 19:11:27 by mruiz-sa          #+#    #+#              #
-#    Updated: 2022/07/07 21:04:46 by mruiz-sa         ###   ########.fr        #
+#    Updated: 2022/07/08 13:12:25 by mruiz-sa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,6 +25,8 @@ SRC = ./srcs/ft_strlen.c \
 			./srcs/sort_3_nbrs.c \
 			./srcs/sort_5_nbrs.c \
 			./srcs/start_algorithm.c \
+			./srcs/copy_and_sort_stack.c \
+			./srcs/checker.c \
 			./movements/swap.c \
 			./movements/push.c \
 			./movements/rotate.c \

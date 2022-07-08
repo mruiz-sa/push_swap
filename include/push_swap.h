@@ -6,7 +6,7 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 18:28:17 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/07/07 21:04:40 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/08 14:21:56 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,14 @@
 # define PUSH_SWAP_H
 
 # include<stdlib.h>
+
+typedef struct s_algorithm
+{
+	int	loop;
+	int	size;
+	int	j;
+	int	nbrs;
+}	t_algorithm;
 
 size_t	ft_strlen(const char *str);
 int		ft_atoi(const char *str);
@@ -49,4 +57,6 @@ void	sort_5_nbrs(int *stack_a, int *stack_a_nbrs, int *stack_b,
 			int *stack_b_nbrs);
 void	start_algorithm(int *stack_a, int *stack_a_nbrs, int *stack_b,
 			int *stack_b_nbrs);
+void	copy_and_sort_stack(int *stack_a, int *stack_a_nbrs);
+void	checker(int *stack_a, int size);
 #endif
