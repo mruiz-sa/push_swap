@@ -6,11 +6,12 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 11:28:48 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/07/08 12:05:08 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/11 09:49:11 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdlib.h>
+#include "../include/push_swap.h"
 
 void	index_stack(int *stack_a_nbrs, int *copy, int *sorted_copy,
 	int *stack_a)
@@ -80,4 +81,6 @@ void	copy_and_sort_stack(int *stack_a, int *stack_a_nbrs)
 	copy_stack(copy, sorted_copy, stack_a, stack_a_nbrs);
 	sort_copy(copy, stack_a_nbrs);
 	index_stack(stack_a_nbrs, copy, sorted_copy, stack_a);
+	free(copy);
+	free(sorted_copy);
 }

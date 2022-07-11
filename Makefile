@@ -6,7 +6,7 @@
 #    By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/31 19:11:27 by mruiz-sa          #+#    #+#              #
-#    Updated: 2022/07/08 13:12:25 by mruiz-sa         ###   ########.fr        #
+#    Updated: 2022/07/11 09:49:00 by mruiz-sa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,10 +39,8 @@ FLAGS = gcc -Wall -Werror -Wextra -g3
 
 $(NAME): $(OBJECTS)
 		@clear
+		@$(FLAGS) -o $(NAME) $(OBJECTS)
 		@echo "\n\033[92m"-------------\\n👌 COMPILED 👌\\n-------------\\n"\033[0m\n"
-		@ar -rc $(NAME) $(OBJECTS)
-		@ranlib $(NAME)
-		@$(FLAGS) $(SRC) -o push_swap
 
 all: $(NAME)
 
