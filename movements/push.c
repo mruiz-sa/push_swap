@@ -6,13 +6,11 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/03 16:20:33 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/07/07 20:39:12 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/11 09:52:22 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<unistd.h>
-
-#include "../include/push_swap.h"
 
 void	pa(int *stack_a, int *stack_b, int *stack_a_nbrs, int *stack_b_nbrs)
 {

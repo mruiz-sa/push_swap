@@ -6,13 +6,11 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 17:15:19 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/07/07 20:36:03 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/11 09:52:43 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
 #include<unistd.h>
-#include "../include/push_swap.h"
 
 void	rra(int *stack_a, int *stack_a_nbrs)
 {

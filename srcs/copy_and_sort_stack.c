@@ -6,12 +6,11 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 11:28:48 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/07/11 09:49:11 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/11 09:57:39 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdlib.h>
-#include "../include/push_swap.h"
 
 void	index_stack(int *stack_a_nbrs, int *copy, int *sorted_copy,
 	int *stack_a)

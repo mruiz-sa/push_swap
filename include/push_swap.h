@@ -6,7 +6,7 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 18:28:17 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/07/08 14:21:56 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/07/11 09:58:21 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,13 +32,13 @@ int		check_no_characters(char *str);
 void	free_array(char **str);
 void	error_and_exit(int *stack_a_nbrs, int *stack_b_nbrs);
 void	free_and_exit(int *stack_a_nbrs, int *stack_b_nbrs);
-int		stack_size(int ac, char **av);
-void	set_stack_nbrs(int	*stack_a_nbrs, int *stack_b_nbrs, int ac);
-void	check_args(int ac, char **av, int *stack_a_nbrs, int *stack_b_nbrs);
 void	free_stacks(int *stack_a_nbrs, int *stack_b_nbrs, int *stack_a,
 			int *stack_b);
 void	free_stacks_and_error(int *stack_a_nbrs, int *stack_b_nbrs,
-			int *stack_a, int *stack_b);
+			int *stack_a, int *stack_b);			
+int		stack_size(int ac, char **av);
+void	set_stack_nbrs(int	*stack_a_nbrs, int *stack_b_nbrs, int ac);
+void	check_args(int ac, char **av, int *stack_a_nbrs, int *stack_b_nbrs);
 int		already_sorted(int *stack_a, int *stack_a_nbrs);
 int		repeated_nbrs(int *stack_a, int *stack_a_nbrs);
 void	sa(int *stack_a, int *stack_a_nbrs);
@@ -58,5 +58,4 @@ void	sort_5_nbrs(int *stack_a, int *stack_a_nbrs, int *stack_b,
 void	start_algorithm(int *stack_a, int *stack_a_nbrs, int *stack_b,
 			int *stack_b_nbrs);
 void	copy_and_sort_stack(int *stack_a, int *stack_a_nbrs);
-void	checker(int *stack_a, int size);
 #endif
