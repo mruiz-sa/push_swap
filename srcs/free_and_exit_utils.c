@@ -6,7 +6,7 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/30 16:37:06 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/07/11 09:49:54 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/09/30 18:55:07 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	error_and_exit(int *stack_a_nbrs, int *stack_b_nbrs)
 {
 	free(stack_a_nbrs);
 	free(stack_b_nbrs);
-	write(1, "Error\n", 6);
+	write(2, "Error\n", 6);
 	exit(0);
 }
 
@@ -57,6 +57,6 @@ void	free_stacks_and_error(int *stack_a_nbrs, int *stack_b_nbrs,
 	free(stack_b_nbrs);
 	free(stack_a);
 	free(stack_b);
-	write(1, "Error\n", 6);
+	write(2, "Error\n", 6);
 	exit(0);
 }
